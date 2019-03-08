@@ -85,7 +85,6 @@ function Sidenav() {
         <Level0Item>Account</Level0Item>
         <NeatList>
           <Level1Link to="/dashboard/profile" activeClassName="active"><Level1Item>Profile</Level1Item></Level1Link>
-          <Level1Item onClick={() => window.alert('Coming soon')}>Network</Level1Item>
         </NeatList>
       </SidenavContent>
     </SidenavContainer>
