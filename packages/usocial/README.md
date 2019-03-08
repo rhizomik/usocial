@@ -2,7 +2,7 @@
 
 > uSocial Tools
 
-uSocial DID: `did:ethr:0x68cce4daeb1d7e19e0cdff840f429b1ba5e131c8`
+uSocial DID: `did:ethr:0x4de5123aeb2f9bda062326436f6f220ca0a12a32`
 
 ## Features
 
