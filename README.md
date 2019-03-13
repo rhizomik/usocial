@@ -2,13 +2,11 @@
 
 > The uPort Social Module
 
-[![Build Status](https://travis-ci.org/zurfyx/usocial.svg?branch=master)](https://travis-ci.org/zurfyx/usocial)<br/>
-[Master] https://uport-social.herokuapp.com
+[![Build Status](https://travis-ci.org/rhizomik/usocial.svg?branch=master)](https://travis-ci.org/rhizomik/usocial)<br/>
 
-[![Build Status](https://travis-ci.org/zurfyx/usocial.svg?branch=development)](https://travis-ci.org/zurfyx/usocial)<br/>
-[Development] https://uport-social-dev.herokuapp.com
+[Deployment] https://usocial.rhizomik.net
 
-- [uSocial Tools](https://github.com/zurfyx/usocial/tree/development/packages/usocial)
+- [uSocial Tools](https://github.com/rhizomik/usocial/tree/development/packages/usocial)
 
 ## Getting started
 
