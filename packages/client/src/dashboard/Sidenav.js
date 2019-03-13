@@ -86,6 +86,8 @@ function Sidenav() {
         <NeatList>
           <Level1Link to="/dashboard/profile" activeClassName="active"><Level1Item>Profile</Level1Item></Level1Link>
         </NeatList>
+        <Level0Item></Level0Item>
+        <a href="mailto:attester@rhizomik.net"><Level0Item>Contact</Level0Item></a>
       </SidenavContent>
     </SidenavContainer>
   );

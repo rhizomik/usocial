@@ -98,7 +98,7 @@ function Home({ user }) {
       <HomeContent>
         <Header>
           <Logo href="/">uSocial</Logo>
-          <GithubLogo href="https://github.com/zurfyx/usocial">
+          <GithubLogo href="https://github.com/rhizomik/usocial">
             <ScreenReader>GitHub</ScreenReader>
             <i className="fab fa-github" aria-hidden="true"></i>
           </GithubLogo>
