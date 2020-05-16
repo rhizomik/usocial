@@ -9,15 +9,13 @@ const PORT = process.env.API_PORT || process.env.PORT || 3001;
 
 let instance;
 async function host() {
-  if (instance) {
-    return instance;
-  }
-  instance = new Promise(async (resolve) => {
+  if (!instance) {
     const ngrok = require('ngrok');
-    await sleep(1e3); // Ngrok's port sometimes isn't closed instantly on nodemon reload
-    const newHost = await ngrok.connect(PORT);
-    resolve(newHost);
-  });
+    await ngrok.disconnect();
+    instance = await ngrok.connect(PORT).catch(async error => {
+      console.log(error);
+    });
+  }
   return instance;
 }
 

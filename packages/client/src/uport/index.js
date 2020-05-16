@@ -3,7 +3,7 @@ import { Connect } from 'uport-connect';
 const connect = (() => {
   let instance;
   return () => {
-    instance = instance || new Connect('uSocial', {
+    instance = instance || new Connect('Rhizomik uSocial', {
       network: 'rinkeby',
       accountType: 'general',
     });
