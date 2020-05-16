@@ -2,7 +2,7 @@
 
 > uSocial Tools
 
-uSocial DID: `did:ethr:0x4de5123aeb2f9bda062326436f6f220ca0a12a32`
+uSocial DID: `did:ethr:0x5ae9245da34e64a5e18e4812ced87170ed74067b`
 
 ## Features
 
@@ -156,4 +156,11 @@ if (attestation) {
 
 ## License
 
-MIT © Gerard Rovira Sánchez
+Developed as part of the MSc Thesis:
+
+**Verification of Self-Sovereign Identities in Ethereum applied to a Media Reuse Smart Contracts Scenario**.
+[https://repositori.udl.cat/handle/10459.1/65956](https://repositori.udl.cat/handle/10459.1/65956)
+
+Author: Gerard Rovira Sánchez
+
+Supervisors: Juan Manuel Gimeno Illa, Roberto García González

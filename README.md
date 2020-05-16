@@ -50,4 +50,11 @@ Environment variables can also be set through `.env` files, see `.env.example` i
 
 ## License
 
-MIT © Gerard Rovira Sánchez
+Developed as part of the MSc Thesis:
+
+**Verification of Self-Sovereign Identities in Ethereum applied to a Media Reuse Smart Contracts Scenario**.
+[https://repositori.udl.cat/handle/10459.1/65956](https://repositori.udl.cat/handle/10459.1/65956)
+
+Author: Gerard Rovira Sánchez
+
+Supervisors: Juan Manuel Gimeno Illa, Roberto García González
