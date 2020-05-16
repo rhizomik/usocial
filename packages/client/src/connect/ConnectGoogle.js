@@ -89,7 +89,8 @@ function CallbackView({ user, googleCode, googleState }) {
 
   useEffect(() => {
     (async () => {
-      const attested = currentAttestation(user.user.verified, securityParams(user));
+      const verified = user.user.verified || [];
+      const attested = currentAttestation(verified, securityParams(user));
       const attestedJwt = attested && attested.jwt;
       const attestation = await handleCallback(googleCode, googleState, pushData, attestedJwt);
       await addAttestation(user, attestation);

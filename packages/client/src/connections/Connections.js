@@ -26,8 +26,8 @@ const ConnectButton = styled(DefaultButton)`
 `;
 
 function Connections({ user }) {
-  const verified = user.user.verified;
-  const invalid = user.user.invalid;
+  const verified = user.user.verified || [];
+  const invalid = user.user.invalid || [];
   const attestations = sortAttestations([].concat(verified, invalid));
   const current = currentAttestation(verified, securityParams(user));
 

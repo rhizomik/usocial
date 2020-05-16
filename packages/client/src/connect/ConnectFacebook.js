@@ -87,7 +87,8 @@ function CallbackView({ user, facebookCode, facebookState }) {
 
   useEffect(() => {
     (async () => {
-      const attested = currentAttestation(user.user.verified, securityParams(user));
+      const verified = user.user.verified || [];
+      const attested = currentAttestation(verified, securityParams(user));
       const attestedJwt = attested && attested.jwt;
       const attestation = await handleCallback(facebookCode, facebookState, pushData, attestedJwt);
       await addAttestation(user, attestation);

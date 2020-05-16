@@ -83,8 +83,9 @@ function ConnectEmail({ user }) {
 
     // Make sure we're working with the latest attestations before adding new ones on top
     await sync(user);
-    
-    const attested = currentAttestation(user.user.verified, securityParams(user));
+
+    const verified = user.user.verified || [];
+    const attested = currentAttestation(verified, securityParams(user));
     const attestedJwt = attested && attested.jwt;
     await connectEmail(state.email, user.user.name, attestedJwt);
     dispatch({ type: 'success' });

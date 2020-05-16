@@ -46,7 +46,7 @@ async function signout(context) {
 function addAttestation(context, attestation) {
   context.setUser({
     ...context.user,
-    verified: usocialToolsAddAttestion(context.user.verified, attestation),
+    verified: usocialToolsAddAttestion(context.user.verified || [], attestation),
   });
 }
 

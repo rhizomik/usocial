@@ -93,7 +93,8 @@ function CallbackView({ user, twitterOauthToken, twitterOauthVerifier }) {
 
   useEffect(() => {
     (async () => {
-      const attested = currentAttestation(user.user.verified, securityParams(user));
+      const verified = user.user.verified || [];
+      const attested = currentAttestation(verified, securityParams(user));
       const attestedJwt = attested && attested.jwt;
       const attestation = await handleCallback(twitterOauthToken, twitterOauthVerifier, pushData, attestedJwt);
       await addAttestation(user, attestation);
