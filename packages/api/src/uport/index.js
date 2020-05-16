@@ -10,7 +10,7 @@ const { qrTemplate } = require('./template');
 const ISS_DID = process.env.REACT_APP_UPORT_DID;
 
 const credentials = new Credentials({
-  appName: 'uSocial Identity',
+  appName: 'Rhizomik uSocial',
   network: 'rinkeby',
   did: ISS_DID,
   privateKey: process.env.UPORT_PRIVATE_KEY,
